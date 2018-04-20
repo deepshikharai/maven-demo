@@ -33,7 +33,7 @@ public class GoogleTest {
 		//dcp.setCapability(CapabilityType.SUPPORTS_NETWORK_CONNECTION, true);
 		//dcp.setCapability("name", "SeleniumDocker");
 		dc.setCapability("idleTimeout", 150);
-        driver = new RemoteWebDriver(new URL("http://35.193.7.170:4444/grid/console"), dc);
+        driver = new RemoteWebDriver(new URL("http://35.193.7.170:4444/wd/hub"), dc);
         google = new GooglePage(driver);
         System.out.println("in before Google Test");
     }
